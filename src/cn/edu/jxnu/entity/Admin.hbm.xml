@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC   
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+<hibernate-mapping package="com.edu.jxnu.entity">  
+    <class name="Admin" table="users">  
+        <id name="Username" type="string">  
+            <column name="username"/>  
+            <generator class="identity"/>           
+        </id>  
+        <property name="Password" type="string">  
+            <column name="password"/>  
+
+    </class>  
+</hibernate-mapping> 
