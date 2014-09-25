@@ -7,7 +7,7 @@ import cn.edu.jxnu.util.BaseAction;
 public class LoginAction extends BaseAction {
 
 	private static final long serialVersionUID = -4748917272740123171L; //ID
-	private UserServiceImpl userService;  //用户服务
+	private UserServiceImpl userService = new UserServiceImpl();  //用户服务
 	private String username;    //登录用户名
 	private String password;   //登录密码
 

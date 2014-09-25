@@ -1,5 +1,5 @@
 package cn.edu.jxnu.dao;
 
-public interface AdminDao {
+public interface RpManagerDAO {
 
 }

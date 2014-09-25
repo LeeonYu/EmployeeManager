@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC   
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.edu.jxnu.entity">
+	<class name="Employee" table="employee">
+		<id name="EmployeeID" type="string">
+			<column name="EmployeeID" />
+			<generator class="identity" />
+		</id>
+		<property name="EmpName" type="string">
+			<column name="EmpName" />
+		</property>
+		<property name="EmpJob" type="string">
+			<column name="EmpJob" />
+		</property>
+		<property name="Sex" type="string">
+			<column name="Sex" />
+		</property>
+		<property name="Phone" type="string">
+			<column name="Phone" />
+		</property>
+		<property name="Mobile" type="string">
+			<column name="Mobile" />
+		</property>
+		<property name="Email" type="string">
+			<column name="Email" />
+		</property>
+		<property name="IdCard" type="string">
+			<column name="IdCard" />
+		</property>
+		<property name="Address" type="string">
+			<column name="Address" />
+		</property>
+		<property name="Post" type="string">
+			<column name="Post" />
+		</property>
+	</class>
+</hibernate-mapping>  

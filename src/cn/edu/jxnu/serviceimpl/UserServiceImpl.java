@@ -1,20 +1,21 @@
 package cn.edu.jxnu.serviceimpl;
 
 import cn.edu.jxnu.dao.UserDao;
-import cn.edu.jxnu.entity.Admin;
+import cn.edu.jxnu.dao.impl.UserDaoImpl;
+import cn.edu.jxnu.entity.User;
 
 public class UserServiceImpl {
-    private UserDao userDao;
+    private UserDaoImpl userDao = new UserDaoImpl();
 
 	//用户登录服务
     public boolean login(String username, String password) {  
-        Admin user =userDao.findUserByName(username);  
+        User user =userDao.findUserByName(username);  
         if(user!=null)  
             if(password.equals(user.getPassword()))  
                 return true;  
         return false;  
     }  
-    public void setUserDAO(UserDao userDao) {  
+    public void setUserDAO(UserDaoImpl userDao) {  
         this.userDao = userDao;  
     }  
 

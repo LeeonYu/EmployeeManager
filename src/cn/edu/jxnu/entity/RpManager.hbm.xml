@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC   
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.edu.jxnu.entity">
+	<class name="Rpmanager" table="rpmanager">
+		<id name="RewardNO" type="int">
+			<column name="RewardNO" />
+			<generator class="identity" />
+		</id>
+		<property name="EmployeeID" type="string">
+			<column name="EmployeeID" />
+		</property>
+		<property name="Position" type="string">
+			<column name="Position" />
+		</property>
+		<property name="RewardPunish" type="string">
+			<column name="RewardPunish" />
+		</property>
+		<property name="Rewardcontent" type="string">
+			<column name="Rewardcontent" />
+		</property>
+		<property name="Reason" type="string">
+			<column name="Reason" />
+		</property>
+		<property name="Branch" type="string">
+			<column name="Branch" />
+		</property>
+		<property name="HandleName" type="string">
+			<column name="HandleName" />
+		</property>
+		<property name="StartDate" type="date">
+			<column name="StartDate" />
+		</property>
+		<property name="CancelDate" type="date">
+			<column name="CancelDate" />
+		</property>
+		<property name="CancelReason" type="string">
+			<column name="CancelReason" />
+		</property>
+		<property name="Remark" type="string">
+			<column name="Remark" />
+		</property>
+	</class>
+</hibernate-mapping>  

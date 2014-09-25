@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-mapping PUBLIC   
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.edu.jxnu.entity">
+	<class name="Translate" table="translate">
+		<id name="TranslateNO" type="int">
+			<column name="TranslateNO" />
+			<generator class="identity" />
+		</id>
+		<property name="EmployeeID" type="string">
+			<column name="EmployeeID" />
+		</property>
+		<property name="TranslateDate" type="date">
+			<column name="TranslateDate" />
+		</property>
+		<property name="PriorBranch" type="string">
+			<column name="PriorBranch" />
+		</property>
+		<property name="NextBranch" type="string">
+			<column name="NextBranch" />
+		</property>
+		<property name="PriorDuty" type="string">
+			<column name="PriorDuty" />
+		</property>
+		<property name="NextDuty" type="string">
+			<column name="NextDuty" />
+		</property>
+	</class>
+</hibernate-mapping>  
